@@ -80,7 +80,7 @@
 #     n = n + 1
 
 # 8. массив , который список(28.10.2021)
-import math
+# import math
 
 # вариант 1 - цикл по списку через индекс i
 # myList = [5, -3, 4, -6, 1]
@@ -92,12 +92,29 @@ import math
 # print()
 
 # вариант 2 - цикл по списку без индексов, сразу по элементам
-myList = [5, -3, 4, -6, 1]
-for elem in myList:
-    if elem > 0: # если число положительное
-        print('+', elem)
-    else:
-        print(elem)
-print()
+# myList = [5, -3, 4, -6, 1]
+# for elem in myList:
+#     if elem > 0: # если число положительное
+#         print('+', elem)
+#     else:
+#         print(elem)
+# print()
 
+# 10.11.2021
+#
+#  Создать список на 10 элементов, заполнить его числами в диапазоне от 0 до 100, вывести элементы списка в вместе с их индексами.
+# К примеру, есть с {1,8,4}, тогда программа должна вывести:
+# 0: 1
+# 1: 8
+# 2: 4
 
+import math
+import random
+
+my_glist = []
+
+for i in range(10):
+    my_glist.append(random.randint(0, 100))
+    print(i,': ',my_glist[i] )
+    print()
+print(my_glist)
