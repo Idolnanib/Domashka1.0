@@ -101,20 +101,38 @@
 # print()
 
 # 10.11.2021
-#
+# ЗАДАЧА 1.
 #  Создать список на 10 элементов, заполнить его числами в диапазоне от 0 до 100, вывести элементы списка в вместе с их индексами.
 # К примеру, есть с {1,8,4}, тогда программа должна вывести:
 # 0: 1
 # 1: 8
 # 2: 4
 
+# import math
+# import random
+#
+# my_glist = []
+#
+# for i in range(10):
+#     my_glist.append(random.randint(0, 100))
+#     print(i,': ',my_glist[i] )
+#     print()
+# print(my_glist)
+
+# Задача 2 Создать список на 5 элементов,
+# заполнить его числами в диапазоне от -10 до 100,
+# вывести элементы списка в одну строку.
+# Найти минимальный элемент.
+
 import math
 import random
 
-my_glist = []
+mega_list  = []
 
-for i in range(10):
-    my_glist.append(random.randint(0, 100))
-    print(i,': ',my_glist[i] )
-    print()
-print(my_glist)
+for i in range(5):
+    mega_list.append(random.randint(-10, 100))
+    print(mega_list[i],end=' ')
+
+min_value = min(mega_list)
+print()
+print(min_value)
