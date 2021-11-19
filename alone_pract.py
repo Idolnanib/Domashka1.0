@@ -148,7 +148,7 @@ list_listok = []
 
 for i in range(15):
     list_listok.append(random.randint(0, 20))
-    print(list_listok[i],end=' ')
+    print(list_listok[i], end=' ')
 max_value = max(list_listok)
 print()
 print(max_value)
