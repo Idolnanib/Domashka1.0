@@ -141,14 +141,56 @@
 # заполнить его числами в диапазоне от 0 до 20,
 # вывести элементы массива в одну строку. Найти максимальный элемент.
 
-import math
-import random
+# import math
+# import random
+#
+# list_listok = []
+#
+# for i in range(15):
+#     list_listok.append(random.randint(0, 20))
+#     print(list_listok[i], end=' ')
+# max_value = max(list_listok)
+# print()
+# print(max_value)
 
-list_listok = []
+# Задача 4 Реализовать меню простого калькулятора
+# 1. Сложить
+# 2. Вычесть
+# 3. Умножить
+# 4. Делить
+# 5. Выход
+#
+# При выборе пунктов с 1 по 4 программа считывает два числа,
+# выполняет выбранное действие и выводит результат
 
-for i in range(15):
-    list_listok.append(random.randint(0, 20))
-    print(list_listok[i], end=' ')
-max_value = max(list_listok)
-print()
-print(max_value)
+spi_1 = []
+spi_2 = []
+a = 0
+b = 0
+user_input = ''
+
+while user_input != "5":
+    print('1. Сложить')
+    print('2. Вычесть')
+    print('3. Умножить')
+    print('4. Делить')
+    print('5. Выход')
+
+    user_input = input()
+    if user_input == '1':
+        a = int(input("Введи первое чило : "))
+        b = int(input("Введи второе чило : "))
+        print('Cумма равна', a + b)
+    elif user_input == '2':
+        a = int(input("Введи первое чило : "))
+        b = int(input("Введи второе чило : "))
+        print('Разница чисел равна ', a - b)
+    elif user_input == '3':
+        a = int(input("Введи первое чило : "))
+        b = int(input("Введи второе чило : "))
+        print('Произведение чисел равно ', a * b)
+    elif user_input == '4':
+        a = int(input("Введи первое чило : "))
+        b = int(input("Введи второе чило : "))
+        print('Деление чисел равно ', a / b)
+print('Пока ')
