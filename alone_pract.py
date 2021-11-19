@@ -124,15 +124,31 @@
 # вывести элементы списка в одну строку.
 # Найти минимальный элемент.
 
+# import math
+# import random
+#
+# mega_list  = []
+#
+# for i in range(5):
+#     mega_list.append(random.randint(-10, 100))
+#     print(mega_list[i],end=' ')
+#
+# min_value = min(mega_list)
+# print()
+# print(min_value)
+
+# Задача 3 Создать список на 15 элементов,
+# заполнить его числами в диапазоне от 0 до 20,
+# вывести элементы массива в одну строку. Найти максимальный элемент.
+
 import math
 import random
 
-mega_list  = []
+list_listok = []
 
-for i in range(5):
-    mega_list.append(random.randint(-10, 100))
-    print(mega_list[i],end=' ')
-
-min_value = min(mega_list)
+for i in range(15):
+    list_listok.append(random.randint(0, 20))
+    print(list_listok[i],end=' ')
+max_value = max(list_listok)
 print()
-print(min_value)
+print(max_value)
